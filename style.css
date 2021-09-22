@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    scroll-behavior: smooth;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0),rgba(20,20,20,0.0),
+        rgba(0,0,0,0)), url(img/cliffs-of-moher-5537024_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    filter: brightness(1.5);
+}
+/*----- navbars starts -----*/
+nav{
+    display: flex;
+    padding: 1% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.5s ease;
+}
+.nav-links li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.nav-links li.active a{
+    background-color: #fff;
+    color: #000;
+}
+/*----- navbars ends -----*/
+
+/*----- home page starts -----*/
+.mainpage{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%,-70%); 
+}
+.mainpage .main h1{
+    font-size: 275%;
+}
+.mainpage .main p{
+    font-size: 125%;
+    margin-bottom: 1rem;
+}
+.mainpage .openinghours{
+    font-size: 90%;
+    position: absolute;
+    top: 130%;
+}
+.mainpage .address{
+    font-size: 90%;
+    position: absolute;
+    top: 160%;
+}
+@media(max-width: 500px){
+    .mainpage .main h1{
+        font-size: 110%;
+    }
+    .mainpage .main p{
+        font-size: 90%;
+    }
+    .mainpage .openinghours{
+        font-size: 70%;
+    }
+    .mainpage .address{
+        font-size: 70%;
+    }
+}
+/*----- home page ends -----*/
+
+/*----- about page starts -----*/
+.about::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgb(30, 30, 30), transparent);
+}
+.about{
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding: 10% 10% 15% 10%;
+    background-color: rgb(30, 30, 30);
+}
+.about .divider{
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.about .aboutpage{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+.about .aboutpage p{
+    font-size: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.about .aboutphoto{
+    width: 100%;
+    filter: saturate(50%);
+    margin-left: 5rem;
+}
+/*----- about page ends -----*/
+
+/*----- menu page starts -----*/
+.menu{
+    margin: auto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 100px;
+    padding: 15% 10% 15% 10%;
+    background-color: rgb(210, 205, 200);
+    z-index: 10;
+}
+.menu .divider{
+    width: 100px;
+    height: 1px;
+    background-color: #000;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.menu .menupage{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 100%;
+    text-align: center;
+}
+.menu .menupage h4{
+    font-size: 100%;
+    text-align: left;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.menu .menupage h4 span{
+    font-size: 100%;
+    float: right;
+    padding-right: 1rem;
+}
+.menu .menupage h5{
+    font-weight: normal;
+    font-size: 80%;
+    text-align: left;
+    padding-left: 2rem;
+}
+.menu .menupage h6{
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+    padding-left: 2rem;
+}
+.menu .menucolumn{
+    flex-basis: 30%;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 25px 10px;
+    box-sizing: border-box;
+}
+/*----- menu page ends -----*/
+
+
+/*----- gallery page starts -----*/
+.gallery{
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    padding: 15%;
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+}
+.gallery .divider{
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+/*----- gallery page ends -----*/
+
+/*----- contact us page starts -----*/
+.contact-us{
+    margin: auto;
+    color: #000;
+    text-align: center;
+    padding-top: 100px;
+    padding: 15%;
+    background-color: #fff;
+    z-index: 10;
+}
+.contact-us .divider{
+    width: 100px;
+    height: 1px;
+    background-color: #000;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.contact-us .contact-uspage{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+}
+.contact-us .contact-uspage .contact-ustext{
+    width: 100%;
+    font-size: 100%;
+    text-align: left;
+}
+.contact-us .contact-uspage .contact-ustext h3{
+    padding-top: 2rem;
+}
+/*----- contact us page ends -----*/
