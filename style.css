@@ -4,95 +4,114 @@
     font-family: Century Gothic;
     scroll-behavior: smooth;
 }
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0),rgba(20,20,20,0.0),
-        rgba(0,0,0,0)), url(img/cliffs-of-moher-5537024_1280.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    filter: brightness(1.5);
-}
-/*----- navbars starts -----*/
-nav{
+
+/*----- navigation bar starts -----*/
+.navbar{
+    position: fixed;
     display: flex;
-    padding: 1% 5%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(0,0,0,0.25);
+    height: 75 px;
+    width: 100%;
+    z-index: 1;
 }
-nav img{
-    width: 100px;
-}
-.nav-links{
-    flex: 1;
-    text-align: right;
-}
-.nav-links li{
-    list-style: none;
-    display: inline-block;
+.navbar .logo{
+    flex: 1 1 auto;
     position: relative;
+    top: -0.5rem;
+    margin-left: 5%;
 }
-.nav-links li a{
+.navbar .logo img{
+    width: 100px;
+    height: auto;
+}
+.navbar .nav{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 5%;
+}
+.navbar .nav li a{
     text-decoration: none;
     color: #fff;
     padding: 5px 20px;
     border: 1px solid #fff;
     transition: 0.5s ease;
+    margin-left: 1rem;
+    margin-top: 0%;
 }
-.nav-links li a:hover{
+.navbar .nav li a:hover{
     background-color: #fff;
     color: #000;
 }
-.nav-links li.active a{
+.navbar .nav li.active a{
     background-color: #fff;
     color: #000;
 }
-/*----- navbars ends -----*/
+/*----- navigation bar ends -----*/
 
 /*----- home page starts -----*/
-.mainpage{
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-90%,-70%); 
+.home-page{
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0),rgba(20,20,20,0.0),
+    rgba(0,0,0,0)), url(img/cliffs-of-moher-5537024_1280.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;    
+    filter: brightness(1.5);
 }
-.mainpage .main h1{
+.home-page .home-box{
+    position: relative;
+    width: 50%;
+    top: 35%;
+    margin-left: 5%;
+}
+.home-page .home-box .head h1{
     font-size: 275%;
+    margin: 0;
 }
-.mainpage .main p{
+.home-page .home-box .head p{
     font-size: 125%;
+    margin-top: 0;
     margin-bottom: 1rem;
 }
-.mainpage .openinghours{
+.home-page .home-box .openinghours{
     font-size: 90%;
     position: absolute;
     top: 130%;
 }
-.mainpage .address{
+.home-page .home-box .address{
     font-size: 90%;
     position: absolute;
     top: 160%;
 }
-@media(max-width: 500px){
-    .mainpage .main h1{
-        font-size: 110%;
-    }
-    .mainpage .main p{
-        font-size: 90%;
-    }
-    .mainpage .openinghours{
-        font-size: 70%;
-    }
-    .mainpage .address{
-        font-size: 70%;
-    }
+.home-page .reserve{
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home-page .reserve .button{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(30, 50, 40);
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    transition: 0.5s ease;
+}
+.home-page .reserve .button:hover{
+    background-color: #fff;
+    color: #000;
 }
 /*----- home page ends -----*/
 
 /*----- about page starts -----*/
-.about::before{
+.about-page::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -101,7 +120,7 @@ nav img{
     height: 100px;
     background: linear-gradient(to top, rgb(30, 30, 30), transparent);
 }
-.about{
+.about-page{
     margin: auto;
     color: #fff;
     text-align: center;
@@ -110,24 +129,24 @@ nav img{
     padding: 10% 10% 15% 10%;
     background-color: rgb(30, 30, 30);
 }
-.about .divider{
+.about-page .divider{
     width: 100px;
     height: 1px;
     background-color: #fff;
     display: inline-block;
     margin-bottom: 5px;
 }
-.about .aboutpage{
+.about-page .about-box{
     display: flex;
     align-items: center;
     margin-top: 5%;
 }
-.about .aboutpage p{
+.about-page .about-box p{
     font-size: 100%;
     text-align: left;
     margin-bottom: 1rem;
 }
-.about .aboutphoto{
+.about-page .about-photo{
     width: 100%;
     filter: saturate(50%);
     margin-left: 5rem;
@@ -135,7 +154,7 @@ nav img{
 /*----- about page ends -----*/
 
 /*----- menu page starts -----*/
-.menu{
+.menu-page{
     margin: auto;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -144,44 +163,44 @@ nav img{
     background-color: rgb(210, 205, 200);
     z-index: 10;
 }
-.menu .divider{
+.menu-page .divider{
     width: 100px;
     height: 1px;
     background-color: #000;
     display: inline-block;
     margin-bottom: 5px;
 }
-.menu .menupage{
+.menu-page .menu-box{
     margin-top: 5%;
     display: flex;
     justify-content: space-between;
     font-size: 100%;
     text-align: center;
 }
-.menu .menupage h4{
+.menu-page .menu-box h4{
     font-size: 100%;
     text-align: left;
     padding-top: 1rem;
     padding-left: 1rem;
 }
-.menu .menupage h4 span{
+.menu-page .menu-box h4 span{
     font-size: 100%;
     float: right;
     padding-right: 1rem;
 }
-.menu .menupage h5{
+.menu-page .menu-box h5{
     font-weight: normal;
     font-size: 80%;
     text-align: left;
     padding-left: 2rem;
 }
-.menu .menupage h6{
+.menu-page .menu-box h6{
     font-weight: normal;
     font-style: italic;
     text-align: left;
     padding-left: 2rem;
 }
-.menu .menucolumn{
+.menu-page .menu-column{
     flex-basis: 30%;
     background: #fff;
     border-radius: 10px;
@@ -191,28 +210,42 @@ nav img{
 }
 /*----- menu page ends -----*/
 
-
 /*----- gallery page starts -----*/
-.gallery{
+.gallery-page{
     margin: auto;
     color: #fff;
     text-align: center;
     padding-top: 100px;
-    padding: 15%;
+    padding: 15% 0 15% 0;
     background-color: rgb(0, 0, 0);
-    z-index: 10;
 }
-.gallery .divider{
+.gallery-page .divider{
     width: 100px;
     height: 1px;
     background-color: #fff;
     display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+}
+.gallery-page .gallery-box{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.gallery-page img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
 }
 /*----- gallery page ends -----*/
 
 /*----- contact us page starts -----*/
-.contact-us{
+.contact-us-page{
     margin: auto;
     color: #000;
     text-align: center;
@@ -221,24 +254,24 @@ nav img{
     background-color: #fff;
     z-index: 10;
 }
-.contact-us .divider{
+.contact-us-page .divider{
     width: 100px;
     height: 1px;
     background-color: #000;
     display: inline-block;
     margin-bottom: 5px;
 }
-.contact-us .contact-uspage{
+.contact-us-page .contact-us-box{
     display: flex;
     align-items: center;
     margin-top: 5%;
 }
-.contact-us .contact-uspage .contact-ustext{
+.contact-us-page .contact-us-box .contact-us-text{
     width: 100%;
     font-size: 100%;
     text-align: left;
 }
-.contact-us .contact-uspage .contact-ustext h3{
+.contact-us-page .contact-us-box .contact-us-text h3{
     padding-top: 2rem;
 }
 /*----- contact us page ends -----*/
