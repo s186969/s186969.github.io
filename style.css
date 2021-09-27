@@ -4,6 +4,15 @@
     font-family: Century Gothic;
     scroll-behavior: smooth;
 }
+/*----- Workaround starts ------*/
+body{
+    align-items: center;
+    width: 1368px;
+    height: 912px;
+    background-color: #000;
+    margin: auto;
+}
+/*----- Workaround stops ------*/
 
 /*----- navigation bar starts -----*/
 .navbar{
@@ -15,7 +24,8 @@
     flex-wrap: wrap;
     background-color: rgba(0,0,0,0.25);
     height: 75 px;
-    width: 100%;
+    width: 1368px; /*----- var 100% -----*/
+    margin-top: 0;
     z-index: 1;
 }
 .navbar .logo{
@@ -111,7 +121,8 @@
 /*----- home page ends -----*/
 
 /*----- about page starts -----*/
-.about-page::before{
+    /*----- deaktivert foreløpig ------*/
+/* .about-page::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -120,6 +131,7 @@
     height: 100px;
     background: linear-gradient(to top, rgb(30, 30, 30), transparent);
 }
+    /*----- deaktivert foreløpig ------*/
 .about-page{
     margin: auto;
     color: #fff;
