@@ -1,22 +1,22 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Century Gothic" sans-serif;
+    font-family: "Century Gothic", sans-serif;
     scroll-behavior: smooth;
 }
-<<<<<<< HEAD:style.css
-/*----- Workaround starts ------*/
 body{
     align-items: center;
     width: 1351px;
     height: 895px;
     background-color: #000;
     margin: auto;
-=======
+}
 p{
-    font-family: serif;
+    font-family: "Century Gothic", serif;
     line-height: 1.5rem;
->>>>>>> 41b8e4d5ac6e2b0768f08d3ec5577f8e12b82d9c:Style/style.css
+}
+address{
+    font-style: normal;
 }
 
 /*----- navigation bar starts -----*/
@@ -28,7 +28,7 @@ p{
     flex-direction: row;
     flex-wrap: wrap;
     background-color: rgba(0,0,0,0.25);
-    width: 100%;
+    width: 1351px; /*--- var 100% ---*/
     z-index: 1;
 }
 .navbar .logo{
@@ -69,19 +69,18 @@ p{
 /*----- home page starts -----*/
 .home-page{
     position: relative;
-    background-image: linear-gradient(rgba(0,0,0,0.95),rgba(0,0,0,0),rgba(20,20,20,0.0),
-    rgba(0,0,0,0)), url(../img/cliffs-of-moher-5537024_1280.jpg);
+    background-image: linear-gradient(rgba(30, 50, 40, 0.7),rgba(30, 50, 40, 0.7)), url(../img/bar-3407484_1920.jpg);
+    filter: saturate(33%);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;    
-    filter: brightness(1.5);
 }
 .home-page .home-box{
     position: relative;
     width: 50%;
-    top: 35%;
+    top: 25%;
     margin-left: 5%;
 }
 .home-page .home-box .head h1{
@@ -125,7 +124,7 @@ p{
 /*----- home page ends -----*/
 
 /*----- about page starts -----*/
-.about-page::before{
+/*.about-page::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -133,7 +132,7 @@ p{
     width: 100%;
     height: 100px;
     background: linear-gradient(to top, rgb(30, 30, 30), transparent);
-}
+}*/
 .about-page{
     margin: auto;
     color: #fff;
