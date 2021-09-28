@@ -193,17 +193,18 @@ p{
     float: right;
     padding-right: 1rem;
 }
-.menu-page .menu-box h5{
+.menu-page .menu-box .omMat{
     font-weight: normal;
     font-size: 80%;
     text-align: left;
     padding-left: 2rem;
 }
-.menu-page .menu-box h6{
+.menu-page .menu-box .allergies{
     font-weight: normal;
     font-style: italic;
     text-align: left;
     padding-left: 2rem;
+    font-size: 80%;
 }
 .menu-page .menu-column{
     flex-basis: 30%;
