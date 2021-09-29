@@ -142,6 +142,10 @@ address{
     padding: 10% 10% 15% 10%;
     background-color: rgb(30, 30, 30);
 }
+.about-page h2 {
+    font-size: 200%;
+    margin: 0;
+}
 .about-page .divider{
     width: 100px;
     height: 1px;
@@ -175,6 +179,10 @@ address{
     padding: 15% 10% 15% 10%;
     background-color: rgb(210, 205, 200);
     z-index: 10;
+}
+.menu-page h2 {
+    font-size: 200%;
+    margin: 0;
 }
 .menu-page .divider{
     width: 100px;
@@ -233,6 +241,10 @@ address{
     padding: 15% 0 15% 0;
     background-color: rgb(0, 0, 0);
 }
+.gallery-page h2 {
+    font-size: 200%;
+    margin: 0;
+}
 .gallery-page .divider{
     width: 100px;
     height: 1px;
@@ -267,6 +279,10 @@ address{
     padding: 15%;
     background-color: #fff;
     z-index: 10;
+}
+.contact-us-page h2 {
+    font-size: 200%;
+    margin: 0;
 }
 .contact-us-page .divider{
     width: 100px;
