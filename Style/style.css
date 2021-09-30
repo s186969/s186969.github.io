@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Century Gothic", sans-serif;
+    font-family: 'Century Gothic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     scroll-behavior: smooth;
 }
 body{
@@ -12,7 +12,10 @@ body{
     margin: auto;
 }
 p{
-    font-family: 'Times New Roman', Times, serif;
+<<<<<<< HEAD
+    font-family: "Century Gothic", serif;
+=======
+>>>>>>> e3730d6681e9d87c7277e414e5e66ffd78d97b03
     line-height: 1.5rem;
 }
 address{
@@ -62,6 +65,10 @@ address{
 }
 .navbar .nav li.active a{
     background-color: #fff;
+    color: #000;
+}
+.navbar .nav li.report a{
+    background-color: darkorange;
     color: #000;
 }
 /*----- navigation bar ends -----*/
@@ -139,7 +146,7 @@ address{
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding: 10% 10% 15% 10%;
+    padding: 15% 10% 15% 10%;
     background-color: rgb(30, 30, 30);
 }
 .about-page h2 {
@@ -156,7 +163,7 @@ address{
 .about-page .about-box{
     display: flex;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 2.5%;
 }
 .about-page .about-box p{
     font-size: 125%;
@@ -192,7 +199,7 @@ address{
     margin-bottom: 5px;
 }
 .menu-page .menu-box{
-    margin-top: 5%;
+    margin-top: 2.5%;
     display: flex;
     justify-content: space-between;
     font-size: 100%;
@@ -214,12 +221,14 @@ address{
     font-size: 80%;
     text-align: left;
     padding-left: 2rem;
+    padding-right: 1rem;
 }
 .menu-page .menu-box .allergies{
     font-weight: normal;
     font-style: italic;
     text-align: left;
     padding-left: 2rem;
+    padding-right: 1rem;
     font-size: 80%;
 }
 .menu-page .menu-column{
@@ -256,7 +265,7 @@ address{
     position: relative;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 2.5%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 350px));
     column-gap: 10px;
@@ -294,7 +303,7 @@ address{
 .contact-us-page .contact-us-box{
     display: flex;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 2.5%;
 }
 .contact-us-page .contact-us-box .contact-us-text{
     width: 100%;
@@ -305,3 +314,32 @@ address{
     padding-top: 2rem;
 }
 /*----- contact us page ends -----*/
+
+/*----- report page starts -----*/
+.report-page{
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    padding: 15% 10% 15% 10%;
+}
+.report-page h2 {
+    font-size: 200%;
+    margin: 0;
+}
+.report-page .divider{
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.report-page .report-box{
+    margin-top: 2.5%;
+}
+.report-page .report-text{
+    text-align: left;    
+}
+.report-page .report-text p{
+    padding-bottom: 1rem;
+}
